@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(chalk.bgBlueBright("=".repeat(100)));
@@ -21,8 +22,8 @@ while (loop) {
             type: "confirm",
             name: "more",
             message: "Do You Want To More Counts Words ??",
-            default: false
-        }
+            default: false,
+        },
     ]);
     if (!MoreCount.more) {
         loop = false;
